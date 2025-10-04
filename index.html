@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Premium Shopify Themes Bundle - Only $499 | Professional E-commerce Templates</title>
+    <meta name="description" content="Get 500 premium Shopify themes for just $499! Professional, responsive, and conversion-optimized e-commerce templates. Instant download, lifetime access.">
+    <meta name="keywords" content="shopify themes, premium templates, e-commerce design, shopify bundle, responsive themes, online store templates">
+    <meta property="og:title" content="500 Premium Shopify Themes Bundle - Only $499">
+    <meta property="og:description" content="Transform your online store with 500 premium Shopify themes. Professional designs, mobile-responsive, SEO-optimized.">
+    <meta property="og:image" content="hero.jpeg">
+    <meta property="og:type" content="product">
+    <link rel="canonical" href="https://yoursite.com">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('hero.jpeg') center/cover;
+            opacity: 0.2;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        .price-tag {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            padding: 20px 40px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 30px 0;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #10ac84, #00d2d3);
+            color: white;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+        
+        .gallery h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            color: #333;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .gallery-item {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        /* Video Section */
+        .video-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            text-align: center;
+            color: white;
+        }
+        
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+        
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .stars {
+            color: #ffd700;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            text-align: center;
+            color: white;
+        }
+        
+        .urgency {
+            background: rgba(255,107,107,0.9);
+            padding: 15px 30px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-weight: bold;
+            animation: blink 2s infinite;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.7; }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero .subtitle { font-size: 1.2rem; }
+            .price-tag { font-size: 1.5rem; padding: 15px 30px; }
+            .cta-button { padding: 15px 30px; font-size: 1.1rem; }
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>500 Premium Shopify Themes</h1>
+                <p class="subtitle">Transform Your Store with Professional Designs</p>
+                <div class="price-tag">Only $499!</div>
+                <p style="font-size: 1.2rem; margin-bottom: 30px;">Worth $50,000+ • Instant Download • Lifetime Access</p>
+                <a href="https://rzp.io/rzp/dWcBQMd" class="cta-button">🛒 Buy Now - Save 90%</a>
+                <a href="#preview" class="cta-button" style="background: linear-gradient(45deg, #ff9a9e, #fecfef);">👀 Preview Themes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 3rem; margin-bottom: 20px;">Why Choose Our Bundle?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Premium Designs</h3>
+                    <p>500 professionally crafted themes worth $50,000+. Each theme is unique and conversion-optimized.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Responsive</h3>
+                    <p>All themes are fully responsive and optimized for mobile, tablet, and desktop devices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Loading</h3>
+                    <p>Optimized code ensures lightning-fast loading speeds for better user experience and SEO.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Easy Customization</h3>
+                    <p>Simple drag-and-drop customization with Shopify's theme editor. No coding required!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>SEO Optimized</h3>
+                    <p>Built with SEO best practices to help your store rank higher in search results.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>High Converting</h3>
+                    <p>Designed to maximize conversions with proven layouts and psychological triggers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="preview">
+        <div class="container">
+            <h2>Preview Our Amazing Themes</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="imgi_135_il_fullxfull.7270479283_phhw.jpg" alt="Premium Shopify Theme 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="imgi_144_il_fullxfull.5925450997_kihs.jpg" alt="Premium Shopify Theme 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="imgi_155_il_1140xN.7172023666_wnlz.jpg" alt="Premium Shopify Theme 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="imgi_265_il_fullxfull.7254224789_g4ml.jpg" alt="Premium Shopify Theme 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="imgi_45_il_1588xN.6838164296_b3hw.jpg" alt="Premium Shopify Theme 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="imgi_61_il_1588xN.7220010781_9sy1.jpg" alt="Premium Shopify Theme 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="imgi_83_il_fullxfull.7133917205_d25i.jpg" alt="Premium Shopify Theme 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="imgi_92_il_fullxfull.6837554904_sucz.jpg" alt="Premium Shopify Theme 8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 style="font-size: 3rem; margin-bottom: 30px;">See What You Get!</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 40px;">Watch this exclusive preview of our premium Shopify themes bundle</p>
+            <div class="video-container">
+                <video controls poster="hero.jpeg">
+                    <source src="Buy Shopify Template Bundle 500 Premium Shopify Themes Bundle Di.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 3rem; margin-bottom: 20px; color: #333;">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Incredible value! These themes saved me thousands in design costs. My conversion rate increased by 40%!"</p>
+                    <strong>- Sarah M., E-commerce Owner</strong>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Professional quality themes that are easy to customize. Best investment I made for my Shopify store!"</p>
+                    <strong>- Mike R., Online Retailer</strong>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"500 themes for $499? This is a no-brainer. The variety and quality exceeded my expectations!"</p>
+                    <strong>- Lisa K., Digital Marketer</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="buy">
+        <div class="container">
+            <div class="urgency">⏰ Limited Time Offer - 90% OFF!</div>
+            <h2 style="font-size: 3rem; margin-bottom: 20px;">Don't Miss This Deal!</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 30px;">Regular Price: $50,000+ | Today Only: $499</p>
+            <div style="margin-bottom: 40px;">
+                <span style="background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 15px; margin: 0 10px; font-size: 1.2rem;">✅ 500 Premium Themes</span>
+                <span style="background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 15px; margin: 0 10px; font-size: 1.2rem;">✅ Instant Download</span>
+                <span style="background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 15px; margin: 0 10px; font-size: 1.2rem;">✅ Lifetime Access</span>
+                <span style="background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 15px; margin: 0 10px; font-size: 1.2rem;">✅ Commercial License</span>
+            </div>
+            <a href="https://rzp.io/rzp/dWcBQMd" class="cta-button" style="font-size: 1.5rem; padding: 25px 60px;">🚀 Get Instant Access Now - $499</a>
+            <p style="margin-top: 20px; opacity: 0.8;">💳 Secure Payment • 30-Day Money Back Guarantee</p>
+        </div>
+    </section>
+
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .gallery-item, .testimonial').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
